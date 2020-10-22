@@ -1,0 +1,8 @@
+config BR2_PACKAGE_ROC_TOOLKIT
+	bool "roc-toolkit"
+	select HOST_SCONS
+	depends on BR2_PACKAGE_LIBUV
+	depends on BR2_PACKAGE_PULSEAUDIO
+	depends on BR2_PACKAGE_SOX
+	depends on BR2_PACKAGE_LIBSOXR
+
